@@ -16,7 +16,7 @@ const Home = () => {
     },[]);
 
     const loadUsers = async () => {
-        const response = await axios.get("http://localhost:3006/users");
+        const response = await axios.get("http://jsonplaceholder.typicode.com/users");
         setUser(response.data);
     }
 
